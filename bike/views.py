@@ -51,9 +51,9 @@ def form_mod_bicicleta(request, id):
 
         if bicicleta.is_valid():
             bicicleta.save() #modificar a la BD
-            datos['mensaje'] = 'Se modificó vehículo'
+            datos['mensaje'] = 'Se modificó Bicicleta'
         else:
-            datos['mensaje'] = 'NO se modificó vehículo'
+            datos['mensaje'] = 'NO se modificó Bicicleta'
     
     return render(request, 'bicicleta/form_mod_bicicleta.html', datos)
 
